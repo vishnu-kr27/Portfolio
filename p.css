@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: bold, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f0e9e9;
+    
+    font-size: 25px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.service {
+    background: rgb(230, 221, 221);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.service p {
+    margin-bottom: 1rem;
+}
+
+.service ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.service ul li {
+    margin-bottom: 0.5rem;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: rgb(14, 238, 208);
+    text-decoration: none;
+    transition:background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgb(27, 38, 194);
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(231, 40, 231);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+h1, h2, h3 {
+    color: #fff; 
+    text-shadow: 
+        0 0 1px #f0f, 
+        0 0 1px #f0f, 
+        0 0 1px #f0f,
+        0 0 2px #f0f,
+        0 0 2px #f0f,
+        0 0 3px #f0f,
+        0 0 3px #f0f;
+}
+
+
+button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+ 
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    background: rgb(1, 253, 232);
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size:20px;
+}
+
+form button:hover {
+    background: rgb(0, 255, 64);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
