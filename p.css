@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -29,16 +31,53 @@ header {
     color: #fff;
     padding: 1rem 0;
 }
+#navbar-brand{
+    font-family: "Orbitron", sans-serif;
+    color: rgb(255, 255, 255); 
+    font-size: larger;
+    text-shadow:
+    0 0 1px rgba(219, 26, 219, 0.795), 
+        0 0 1px rgba(219, 26, 219, 0.795), 
+        0 0 1px rgba(219, 26, 219, 0.795), 
+        0 0 2px rgba(219, 26, 219, 0.795), 
+        0 0 2px rgba(219, 26, 219, 0.795), 
+        0 0 3px rgba(219, 26, 219, 0.795), 
+        0 0 3px rgba(219, 26, 219, 0.795), 
+    
+}
+.strong{
+    font-family: "Orbitron", sans-serif;
+    color: rgb(255, 255, 255); 
+    font-size: larger;
+   
+    text-shadow: 0 0 20px rgba(219, 26, 219, 0.795);;
+}
+
+
+.nav-item{
+    color: rgba(14, 238, 208, 0.836);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    
+   
+}
+.nav-item:hover{
+    background-color: rgba(0, 255, 255, 0.397);
+    border-radius: 5px;
+}
+
+
 p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 li{
     
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 label{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .profile-img {
     border-radius: 50%;
@@ -46,6 +85,7 @@ label{
     height: 150px;
     object-fit: cover;
 }
+
 .service {
     background: rgba(5, 218, 255, 0.185); 
     padding: 1rem;
@@ -97,27 +137,9 @@ label{
     margin-bottom: 1rem;
 }
 
-.proficiency {
-    margin-top: 1rem;
-    background: rgba(0, 255, 255, 0.1); 
-    border-radius: 10px;
-    height: 20px;
-    width: 100%;
-    position: relative;
-}
 
-.progress {
-    background: rgb(1, 253, 232); 
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    line-height: 20px; 
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: width 0.3s ease-in-out;
-}
+
+
 
 #coding-languages {
     padding: 2rem 0;
@@ -130,34 +152,7 @@ label{
 }
 
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 1rem;
-}
-
-nav ul li a {
-    color: rgba(14, 238, 208, 0.836);
-    text-decoration: none;
-    transition:background-color 0.3s ease;
-}
-nav a:hover {
-    background-color: rgba(0, 255, 255, 0.397);
-    border-radius: 5px;
-}
 
 section {
     padding: 2rem 0;
@@ -176,6 +171,7 @@ h2 {
 
 
 h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
     color: #fff; 
     text-shadow: 
         0 0 1px #f0f, 
@@ -245,15 +241,7 @@ footer {
         width: 90%;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 1rem;
-    }
+    
 
     .profile-img {
         width: 120px;
@@ -268,21 +256,12 @@ footer {
         height: 15px;
     }
 
-    .progress {
-        line-height: 15px;
-    }
+    
 }
 
 
 @media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 0.5rem;
-    }
-
+    
     .container {
         width: 95%;
     }
@@ -300,12 +279,39 @@ footer {
         height: 10px;
     }
 
-    .progress {
-        line-height: 10px;
-        font-size: 0.8rem;
-    }
+    
 
     form {
         grid-template-columns: 1fr;
     }
+    
 }
+/* Media Queries for Font Size Adjustments */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .service, .coding-language {
+        padding: 0.5rem;
+    }
+
+    .proficiency {
+        height: 15px;
+    }
+
+    body {
+        font-size: 20px; /* Adjusted font size for medium screens */
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Adjusted font size for headings */
+    }
+}
+
